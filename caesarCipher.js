@@ -1,26 +1,3 @@
-function capitalize(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-function reverseString(string) {
-  return string.split('').reverse().join('');
-}
-
-class Calculator {
-  static add(a, b) {
-    return a + b;
-  }
-  static subtract(a, b) {
-    return a - b;
-  }
-  static multiply(a, b) {
-    return a * b;
-  }
-  static divide(a, b) {
-    return a / b;
-  }
-}
-
 function caesarCipher(string, shift) {
   //Caesar Cipher for upper, lower and punctuation using UNICODE values
   string = string.split('');
@@ -58,25 +35,3 @@ function caesarCipher(string, shift) {
 
   return string.join('');
 }
-
-function analyzeArray(array) {
-  let average = 0;
-  for (let i = 0; i < array.length; i++) {
-    average += array[i];
-  }
-  average = average / array.length;
-
-  const min = Math.min(...array);
-  const max = Math.max(...array);
-
-  let data = {
-    average: `${average}`,
-    min: `${min}`,
-    max: `${max}`,
-    length: `${array.length}`,
-  };
-  return data;
-  // returns an object with average, min, max, length, properties
-}
-
-console.log(analyzeArray([1, 2, 3, 4, 5]));
