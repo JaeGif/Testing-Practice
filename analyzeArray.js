@@ -17,3 +17,4 @@ function analyzeArray(array) {
   return data;
   // returns an object with average, min, max, length, properties
 }
+export default analyzeArray;
