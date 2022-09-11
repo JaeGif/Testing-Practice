@@ -9,10 +9,10 @@ function analyzeArray(array) {
   const max = Math.max(...array);
 
   let data = {
-    average: `${average}`,
-    min: `${min}`,
-    max: `${max}`,
-    length: `${array.length}`,
+    average: Number(`${average}`),
+    min: Number(`${min}`),
+    max: Number(`${max}`),
+    length: Number(`${array.length}`),
   };
   return data;
   // returns an object with average, min, max, length, properties

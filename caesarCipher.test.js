@@ -12,6 +12,8 @@ test('negative shift', () => {
 test('symbol shift', () => {
   expect(caesarCipher('$ #!', 1)).toBe('%!$"');
 });
-test('big shift', () => {
-  expect(caesarCipher('abcd', 1)).toBe('');
+test('letter wrap', () => {
+  expect(caesarCipher('abcdefghijklmnopqrstuvwxyz', 2)).toBe(
+    'cdefghijklmnopqrstuvwxyzab'
+  );
 });
